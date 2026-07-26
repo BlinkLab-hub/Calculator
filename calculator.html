@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="icon" href="calculator.svg">
+</head>
+
+<body>
+    <article class="container">
+        <input type="text" id="screen" readonly>
+        <section class="buttons">
+            <button class="orange" onclick="clearScreen()">C</button>
+            <button onclick="appendScreen('π')">π</button>
+            <button id="bracket" onclick="appendScreen('(')">(</button>
+            <button onclick="deleteLastChar()">x</button>
+            <button class="orange" onclick="appendScreen('+')">+</button>
+            <button onclick="appendScreen('7')">7</button>
+            <button onclick="appendScreen('8')">8</button>
+            <button onclick="appendScreen('9')">9</button>
+            <button class="orange" onclick="appendScreen('-')">-</button>
+            <button onclick="appendScreen('4')">4</button>
+            <button onclick="appendScreen('5')">5</button>
+            <button onclick="appendScreen('6')">6</button>
+            <button class="orange" onclick="appendScreen('/')">/</button>
+            <button onclick="appendScreen('1')">1</button>
+            <button onclick="appendScreen('2')">2</button>
+            <button onclick="appendScreen('3')">3</button>
+            <button class="orange" onclick="appendScreen('*')">*</button>
+            <button onclick="appendScreen('.')">.</button>
+            <button onclick="appendScreen('0')">0</button>
+            <button onclick="generateAnswer()">=</button>
+        </section>
+        <p id="author">Created by Sudaice</p>
+    </article>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
